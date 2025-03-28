@@ -40,9 +40,6 @@ const Login = ({ navigation }) => {
           onPress={() => navigation.navigate("Register")} >Sign Up
         </Text>
       </Text>
-
-      {/* Back Button */}
-      <Text style={[styles.backbtn, { color: isDarkMode ? '#D6A73C' : '#08026F' }]} onPress={() => navigation.navigate("GetStarted")}>Back</Text>
     </View>
   );
 };
@@ -84,8 +81,5 @@ const styles = StyleSheet.create({
   signupLink: {
     fontWeight: "700",
     textDecorationLine: "underline"
-  },
-  backbtn: {
-    position: "absolute", left: 25, top: 50, textAlign: "center", fontSize: 16, fontWeight: "700", opacity: 0.78
   },
 });
